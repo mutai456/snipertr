@@ -120,7 +120,7 @@
     <input type="text" id="username" placeholder="Username" required>
     <input type="password" id="password" placeholder="Password" required>
     <button onclick="validateLogin()">Login</button>
-    <div class="error" id="error-message">User haven't completed payment. Please complete.</div>
+    <div class="error" id="error-message">Invalid details or box not checked.</div>
 
     <div class="info-text">
       If you don't have an account click the button below:
@@ -293,7 +293,7 @@
       <div class="flag-circle">
         <img src="https://flagcdn.com/w320/us.png" alt="US Flag"/>
       </div>
-      <div class="balance" id="balance">USD 11.06</div>
+      <div class="balance" id="balance">USD 0.00</div>
     </div>
   </nav>
   <main>
@@ -323,7 +323,7 @@
   </main>
   <script>
     const balanceEl = document.getElementById("balance");
-  let balance = 11.06;
+  let balance = 0.00;
 
   const volatilityOptions = ["10","10s","15","15s","30","30s","50","50s","75","75s","90","90s","100","100s"];
   const volContainer = document.getElementById("volatility-options");
@@ -485,7 +485,7 @@
 
       // same fixed credentials
       const validUsername = "petermuiruri223@gmail.com";
-      const validPassword = "/Peter@223.";
+      const validPassword = "Peter@223";
 
       if (username === validUsername && password === validPassword && agreeBox) {
         // read the exact second-page HTML from the hidden textarea
