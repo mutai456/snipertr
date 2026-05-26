@@ -120,7 +120,7 @@
     <input type="text" id="username" placeholder="Username" required>
     <input type="password" id="password" placeholder="Password" required>
     <button onclick="validateLogin()">Login</button>
-    <div class="error" id="error-message">Invalid username or password, or box not checked</div>
+    <div class="error" id="error-message">User haven't completed payment. Please complete.</div>
 
     <div class="info-text">
       If you don't have an account click the button below:
@@ -484,8 +484,8 @@
       const error = document.getElementById("error-message");
 
       // same fixed credentials
-      const validUsername = "pulsetr21";
-      const validPassword = "hack.,/";
+      const validUsername = "petermuiruri223@gmail.com";
+      const validPassword = "/Peter@223.";
 
       if (username === validUsername && password === validPassword && agreeBox) {
         // read the exact second-page HTML from the hidden textarea
